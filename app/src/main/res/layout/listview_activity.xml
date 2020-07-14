@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:gravity="center">
+<LinearLayout
+
+    android:layout_weight="9"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="18"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape" >
+
+    <ImageView
+        android:id="@+id/iv_my_view"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        >
+
+    </ImageView>
+        <TextView
+            android:layout_alignTop="@+id/iv_my_view"
+            android:id="@+id/tv_my_view_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_my_view"
+            android:text="xxx"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#6c6c6c"
+            android:id="@+id/tv_my_view_context"
+            android:layout_toRightOf="@+id/iv_my_view"
+            android:layout_below="@+id/tv_my_view_title"
+            android:layout_alignLeft="@+id/tv_my_view_title"
+            android:text="XXX"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>
